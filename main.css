@@ -1,0 +1,1549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url("/fonts/Futura.woff2");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: poppins;
+
+}
+
+/* FROM HERE WE START HEADER */
+.top {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  font-size: 17px;
+  /* font-family: popins; */
+  font-family: 'Poppins', system-ui;
+}
+
+/* this is for aniamtion */
+/* REQUIRED for smooth reveal */
+.reveal-text,
+.reveal-image {
+  visibility: hidden;
+}
+
+.reveal-text,
+.reveal-image {
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+
+.menu img {
+  width: 100%;
+  max-width: 45px;
+  display: none;
+}
+
+.header .left img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  height: 77.5px;
+}
+
+.header .mid ul {
+  display: flex;
+
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+.header .mid li {
+  padding: 7.5px 15px;
+
+}
+
+.header .mid svg {
+  max-width: 16px;
+  width: 100%;
+  height: auto;
+  margin-left: 7px;
+  color: #121212;
+  fill: #121212;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  /* Ensures accurate width for underline */
+}
+
+
+.header-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 2px;
+  background: #585858;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: ;
+
+}
+
+.header .mid svg:hover {
+  transform: rotate(90deg);
+  transition: 0.8s ease;
+  /* smooth animation */
+  /* <use transform="scale(1 -1) rotate(90 24.235 0)" xlink:href="#nds-Icon255a"></use> */
+}
+
+svg:hover {
+  transform: rotate(118deg);
+  transition: transform 0.5s ease;
+}
+
+
+
+
+
+.same {
+  visibility: hidden;
+}
+
+.header .right .person {
+  width: 100%;
+  max-width: 28px;
+  height: 28px;
+  padding: 12px;
+}
+
+#person {
+  max-width: 35px;
+  width: 100%;
+  height: 35px;
+}
+
+.header-container {
+  display: flex;
+  padding: 12px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* this lies below header */
+.midden-container {
+  background-color: #de0d37;
+  text-align: center;
+  padding: 4px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.midden-container a {
+  text-decoration: none;
+}
+
+/* this is main image */
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image .second {
+  display: none;
+}
+
+/* this is first .heading */
+.heading {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.heading p {
+  text-align: center;
+  margin: 0;
+
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #131A7E;
+  font-size: 30px;
+}
+
+/* here we start main section */
+.main {
+  padding: 0 40px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.main-container .box-i {
+  position: relative;
+  width: 100%;
+  height: 276px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 8px;
+  max-width: 268px;
+}
+
+.main-container .box-i img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+.main-container .two {
+  opacity: 1;
+}
+
+.main-container .two:hover {
+  opacity: 0;
+
+}
+
+.main-container .one {
+  opacity: 0;
+}
+
+.main-container .one:hover {
+  opacity: 1;
+}
+
+.main-container .caption {
+
+  font-family: poppins;
+  color: #131A7E;
+
+
+}
+
+
+
+/* section 1 starts from here */
+
+
+.section1 {
+  padding: 0 50px 30px;
+}
+
+.section1 h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: serif;
+  padding: 30px;
+}
+
+/* button stars from here  */
+.button {
+  display: flex;
+  padding: 20px;
+}
+
+
+.section1 .tablink {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 5px 5px 5px;
+  transition: 0.05s;
+  font-size: 17px;
+  width: 26%;
+  opacity: 0.5;
+  /* border-bottom: 2px solid black; */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+  padding-bottom: 15px;
+  position: relative;
+
+}
+
+.section1 .tablink:hover {
+  opacity: 1;
+}
+
+.section1 .tablink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background: #585858;
+
+}
+
+.section1 .tablink img {
+  width: 50px;
+  max-width: 100%;
+}
+
+/* we are starting overflow images */
+.section1-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 10px 20px 10px;
+  overflow-x: auto;
+}
+
+.section1-container img {
+  padding: inherit;
+}
+
+/* section 2 starts from here  */
+
+.section2 {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.section2 .left {
+  background: #DE0D37;
+  text-align: center;
+  width: 50%;
+}
+
+.section2 .h5 {
+  color: #FFF;
+  font-family: serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+  margin: 0 0 10px;
+}
+
+.section2 .h3 {
+  color: #FFF;
+  font-family: serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 0 15px;
+}
+
+.section2 p {
+  color: #FFF;
+  font-family: serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.para {
+  text-align: left;
+  padding: 58px;
+  padding-bottom: 0;
+}
+
+.about a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #131A76;
+  padding: 20px 30px;
+  display: inline-block;
+  transition: 0.8 ease;
+  position: relative;
+  overflow: hidden;
+  keeps shine inside button
+}
+
+.about a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transform: skewX(-25deg);
+}
+
+/* Run shine animation on hover */
+.about a:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.section2 .right {
+  width: 50%;
+}
+
+.read-about {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.section2 .right img {
+  max-width: 766px;
+  height: 100%;
+  width: 100%;
+
+}
+
+.shop {
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.shop-seller {
+  padding: 11px 20px;
+  text-decoration: none;
+  color: white;
+  background: #131A76;
+  font-size: 13px;
+}
+
+.shop-seller a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transform: skewX(-25deg);
+}
+
+/* Run shine animation on hover */
+.shop a:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+/* section2-a is starting */
+.section2-a {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-container .text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.51);
+  /* black with 50% opacity */
+
+}
+
+.image-container .text {
+  position: absolute;
+  color: black;
+  backdrop-filter: ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 35px;
+  width: 250px;
+  margin: auto;
+}
+
+.text p {
+  position: relative;
+  z-index: 2;
+}
+
+.long {
+  font-size: 13px;
+}
+
+.shop2 {
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.shop2-seller {
+  padding: 11px 20px;
+  text-decoration: none;
+  color: white;
+  background: #131A76;
+  font-size: 13px;
+}
+
+.shop2-seller a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transform: skewX(-25deg);
+}
+
+/* Run shine animation on hover */
+.shop a:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+
+/* section 3 of images */
+.section3 {
+  padding: 50px 40px 50px 40px;
+}
+
+.section3-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.section3-container img {
+  max-width: 331px;
+  width: 100%;
+}
+
+.section3-container svg {
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  color: #DE0D37;
+
+}
+
+.section3-container p {
+  text-align: center;
+  color: #de0d37;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/* section 4 is here  */
+.section4 {
+  padding: 0 40px;
+  margin: 0 10px;
+}
+
+.section4 h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #000;
+  font-family: serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+  padding-bottom: 15px;
+}
+
+.section4-container {
+  display: flex;
+  gap: 10px;
+}
+
+.section4-container img {
+  max-width: 268px;
+  height: 100%;
+  padding: 8px;
+  padding-top: 15px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.section4-container .p {
+  text-align: center;
+  max-width: 268px;
+  color: #131A7E;
+  font-family: cursive;
+  width: 100%;
+}
+
+.trending {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.trending span {
+  color: #FFF;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 3px;
+  background: #131A7E;
+  border: none;
+  letter-spacing: 1px;
+  padding: 15px 20px 10px;
+}
+
+/* get ready for hopking */
+
+
+.hopking {
+  padding: 0 40px;
+  margin: 0 10.4px;
+}
+
+.hopking-container {
+
+  display: flex;
+  margin: 50px 82px;
+  flex-direction: row;
+}
+
+.hopking .left img {
+  max-width: 500px;
+  height: 333px;
+  width: 100%;
+}
+
+.hopking .right {
+  padding: 15px 0 0 60px;
+  /* margin-left: 60px; */
+  text-align: left;
+  width: 50%;
+  color: #131A7E;
+}
+
+.hopking .left {
+  width: 50%;
+}
+
+.hopking .right .h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.hopking .right .h1 {
+  letter-spacing: 0.3em;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.hopking .right .h3 {
+  margin-bottom: 28px;
+  font-size: 17.6px;
+  font-family: sans-serif;
+}
+
+
+
+
+.hopking .right a {
+  text-decoration: none;
+  color: white;
+  background: #131A7E;
+  font-size: 13p;
+  font-family: sans-serif;
+  padding: 11px 26px;
+  margin: 15px 10px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hopking .right a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transform: skewX(-25deg);
+}
+
+/* Run shine animation on hover */
+.hopking .right a:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+
+
+
+/* now section 5 logos */
+.section5 {
+  display: flex;
+  margin: 100px 10px;
+  padding: 0 40px;
+  gap: 60px;
+  justify-content: center;
+}
+
+.stars {
+
+
+  text-align: center;
+}
+
+.van {
+
+  text-align: center;
+}
+
+.communication {
+
+  text-align: center;
+}
+
+.shirts {
+
+  text-align: center;
+}
+
+.section5 img {}
+
+.section5 .p {
+  color: #000;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+/* SECTION 6 OF IMAGES */
+.section6 {
+  padding: 0 40px;
+  margin: 0 10px;
+  padding-bottom: 50px;
+}
+
+.section6 h2 {
+  text-align: center;
+  margin: 0;
+  color: #131A7E;
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+
+.section6-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.section6-container img {
+  max-width: 340px;
+  height: auto;
+  width: 100%;
+}
+
+.section6-container h3 {
+  color: #131A7E;
+  font-family: cursive;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* working before footer */
+.pre-footer {
+  padding: 75px 40px;
+  margin: 0 10px;
+  background-color: #f9f9f9;
+  color: #1c1d1d;
+}
+
+.pre-footer-container {
+  text-align: center;
+}
+
+.pre-footer-container .h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 50;
+}
+
+.cta {
+  font-weight: 100;
+  margin-bottom: 15px;
+
+}
+
+.pre-footer-container span {
+  margin-left: -4px;
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 0 5px 5px 0;
+  background: #131a7e;
+  padding: -19.2px;
+  border: none;
+  letter-spacing: 1px;
+  padding: 0px 20px 6px;
+
+}
+
+#email-field {
+  padding: 4.8px 100px;
+}
+
+ .email {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* finally footer */
+.footer {
+  background: #252525;
+
+
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  padding: 45px 40px 30px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 10px;
+  color: #fff;
+
+}
+
+.footer-container a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.footer-container li {
+
+  list-style-type: none;
+  padding: 4px 0;
+  font-family: sans-serif;
+  position: relative;
+  /* display: inline-block; */
+}
+
+.footer-container li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.footer-container li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+.row1 img {
+  max-width: 150px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.row1 {
+
+  line-height: 30px;
+  width: 16%;
+}
+
+.row2 {
+
+  line-height: 30px;
+}
+
+.row3 {
+
+  line-height: 30px;
+}
+
+.row4 {
+
+  line-height: 30px;
+}
+
+.address-section {
+
+  line-height: 30px;
+}
+
+.footer-container h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+.svg-box {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.svg-location-container-svg-in-row {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.svg-email-container-svg-in-row {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+
+.svg-phone-container-svg-in-row {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.row6 {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+
+  #emailfield {
+    background-color: transparent;
+    border-radius: 35px;
+    color: white;
+    height: 3em;
+    width: 100%;
+    /* padding: 0.4em 1.5em; */
+  }
+
+
+}
+
+#smsb-button-field-subscribe {
+  background: white;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 26px;
+  font-size: 22px;
+  margin-top: 23px;
+  margin-left: px;
+}
+
+.fault {
+  margin-top: 30px;
+}
+
+.end {
+  padding: 0 40px;
+  margin: 0 10px;
+}
+
+.end-container {
+  margin-left: 54px;
+  padding-bottom: 35px;
+  margin-top: 50px;
+  color: white;
+
+}
+
+
+
+
+
+/* show first image by default */
+.image-box img.first {
+  opacity: 1;
+}
+
+.image-box img.second {
+  opacity: 0;
+}
+
+/* On hover: hide first image, show second */
+.image-box:hover img.first {
+  opacity: 0;
+}
+
+.image-box:hover img.second {
+  opacity: 1;
+}
+
+
+@media (max-width:1024px) {
+
+  .header-container {
+    padding: 0;
+  }
+
+  .header-container .mid li {
+    font-size: 11px;
+    gap: 0;
+    padding: 5px;
+  }
+
+  .header-container .left img {
+    max-width: 76px;
+  }
+
+  .header-container .right .person {
+    padding: 0%;
+    min-width: 15px;
+    display: ;
+    width: 100%;
+  }
+
+  .header-container .right {
+    width: 15%;
+  }
+
+  .main-container .box-i {
+    height: 150px;
+  }
+
+  .section2 {
+    height: 720px;
+  }
+
+  .section5 img {
+    max-width: 175px;
+    width: 100%;
+  }
+
+  .read-about {}
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-container .row1 {
+    width: 100%;
+  }
+
+  .section2 .right img {
+    width: 100%;
+  }
+
+  .section2 p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .section2 .h5 {
+    font-size: 20px;
+  }
+
+  .section2 .h3 {
+    font-size: 41px;
+    line-height: 1.5;
+  }
+
+  /* for kist line  */
+
+
+  .footer-container li::after {
+    width: 30%;
+  }
+
+
+
+
+
+
+
+}
+
+
+@media (max-width:768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .header-container .mid {
+    display: none;
+  }
+
+  .header-container .left {
+    display: flex;
+    justify-content: ;
+
+
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .person {
+    gap: 100px;
+    padding: 100px;
+  }
+
+  #person {
+    display: none;
+  }
+
+  .image .first {
+    display: none;
+  }
+
+  .image .second {
+    display: block;
+  }
+
+  .menu img {
+    display: block;
+
+    margin-left: 26px;
+    width: 26px;
+
+  }
+
+  .main-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .box-i {
+    width: 267px !important;
+    height: 278px !important;
+  }
+
+  /* we are starting section2  */
+  .section2 {
+    display: none;
+  }
+
+  .section2-a {
+    display: block;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .shop2 {
+    padding: 0;
+    margin-top: 5px;
+    font-size: ;
+  }
+
+  .shop2-seller {
+    padding: 4px;
+  }
+
+  .shop2-seller a {
+    font-size: 11px;
+  }
+
+  /* section4 is here  */
+  .section3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tablink p {
+    font-size: 11px;
+  }
+
+
+
+  /* this is section4  */
+  .section4-container {
+    overflow-x: auto;
+
+  }
+
+  .section4-container img {
+    width: 280px;
+  }
+
+  /* this is section5  */
+
+
+  .section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    /* justify-content: ; */
+  }
+
+  .section5 img {
+    width: 100px;
+
+  }
+
+  .section5 .p {
+    text-align: center;
+
+  }
+
+  .i {
+    text-align: center;
+
+  }
+
+  .section5 .stars {
+    width: none !important;
+  }
+
+  /* here in section hopking  */
+
+  .hopking {
+    padding-bottom: 50%;
+  }
+
+  .hopking .left {
+    width: unset;
+    position: absolute;
+  }
+
+  .hopking-container .right {
+    position: relative;
+    width: 100%;
+    margin-left: ;
+    text-align: center;
+    color: black;
+    padding: 0;
+    top: 250px;
+    /* right: 10%; */
+  }
+
+  .hopking-container .right::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.51);
+    /* black with 50% opacity */
+    display: f;
+  }
+
+  .hopking-container {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .hopking-container .right p {
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .hopking-container .right .h3 {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  /* IS TIME FIR .section6  */
+
+  .section6-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #email-field {
+    padding: 4.8px 10px;
+  }
+
+  .footer-container {
+    display: block;
+
+  }
+
+  .footer-container .row1 {
+    width: 63%;
+  }
+
+  .footer-container li::after {
+    width: 40%;
+  }
+
+
+
+
+
+}
+
+
+/* media qurree for mobile */
+
+
+@media (max-width:426px) {
+
+  .section6-container {
+    display: block;
+
+  }
+
+  .section6-container img {
+    /* width: 370px !important; */
+    padding: 0;
+
+  }
+
+  .section5 .p {
+    font-size: 20px;
+  }
+
+  .heading p {
+    font-size: 25px;
+  }
+
+  .section1 {
+    padding: 0;
+  }
+
+  .section1 h1 {
+    font-size: 25px;
+  }
+
+  .image-container {
+    margin-top: 30px;
+  }
+
+  .section4 h1 {
+    font-size: 30px;
+  }
+
+  .trending span {
+    font-size: 18px;
+  }
+
+  .section6 {
+    padding: 0 17px;
+    margin-bottom: 20px;
+  }
+
+  .end-container {
+    padding: 0 17px !important;
+    margin: 0 !important;
+  }
+
+  .footer-container {
+    padding: 0 17px;
+  }
+
+  .hopking-container .right {
+    top: 70px;
+  }
+
+  .hopking {
+    /* padding-bottom;: !important; */
+  }
+
+  .section1 .tablink img {
+    width: 30px;
+    max-width: 100%;
+  }
+
+  .section1 .tablink p {
+    font-size: 11px;
+  }
+
+  .section3 {
+    /* padding: 26px 6px 50px 9px; */
+    padding: 0 17px;
+    padding-top: 30px;
+  }
+.email {
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0;
+}
+.pre-footer-container span{
+  border-radius: 0;
+}
+ 
+  .footer-container li::after {
+    width: 50%;
+  }
+ /* for last text  */
+ .end {
+  margin: 0;
+  padding: 0;
+  padding-bottom:30px ;
+ }
+
+}
+
+@media (min-width:1580px) {
+  .section2 .left {
+    width: unset;
+  }
+
+  .section3-container {
+    justify-content: center;
+  }
+
+  .section4-container {
+    justify-content: center;
+  }
+
+
+  .section5 {
+    justify-content: center;
+  }
+
+  .section6-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container .box-i {
+    /* min-width: 345px; */
+  }
+
+  .caption {
+    /* width: 50%; */
+  }
+
+  .hopking {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main {
+    margin-left: 40px;
+  }
+ 
+
+
+}
